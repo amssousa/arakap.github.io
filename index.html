@@ -7,11 +7,16 @@
 
   <link rel="icon" type="image/png" href="logo.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     body {
-      font-family: Arial, sans-serif;
+      /* Nova fonte aplicada aqui */
+      font-family: 'Poppins', sans-serif;
       background: linear-gradient(135deg,#2b3292,#0149b4);
       color: white;
       text-align: center;
@@ -30,25 +35,37 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      gap: 10px;
+      gap: 12px;
       background: white;
       color: black;
       text-decoration: none;
-      margin: 10px auto;
+      margin: 12px auto; /* Aumentei um pouquinho o espaçamento entre eles */
       padding: 15px;
-      padding-left: 20px;
-      border-radius: 10px;
-      width: 80%;
-      max-width: 300px;
-      font-weight: bold;
-      transition: 0.3s;
+      padding-left: 25px;
+      
+      /* MUDANÇA: Cantos muito mais arredondados */
+      border-radius: 30px; 
+      
+      width: 85%; /* Ajuste leve na largura */
+      max-width: 320px;
+      
+      /* MUDANÇA: Fonte mais fina (peso 400) */
+      font-weight: 400; 
+      
+      font-size: 15px; /* Ajuste leve no tamanho */
+      letter-spacing: 0.5px; /* Espaçamento entre letras para elegância */
+      
+      transition: 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra leve para dar profundidade */
     }
 
     .botao i {
       font-size: 18px;
       width: 25px; /* Alinha os ícones verticalmente */
+      text-align: center;
     }
 
+    /* Cores dos ícones mantidas */
     .fa-whatsapp { color: #25D366; }
     .fa-instagram { color: #E4405F; }
     .fa-facebook { color: #1877F2; }
@@ -57,7 +74,7 @@
 
     .logo-container {
       text-align: center;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     .logo {
@@ -66,20 +83,28 @@
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
     .botao:hover {
-      background: #f0f0f0;
-      transform: scale(1.02);
+      background: #f8f8f8;
+      transform: translateY(-3px); /* Efeito de flutuar levemente */
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
     }
 
-    /* Estilo do Rodapé */
+    /* Estilo do Rodapé mantendo a fonte Poppins */
     footer {
       margin-top: 40px;
       padding: 20px;
-      font-size: 12px;
-      color: rgba(255, 255, 255, 0.7);
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.6);
       line-height: 1.6;
+      font-weight: 400;
+    }
+    
+    footer strong {
+        font-weight: 600; /* Nome da empresa um pouco mais forte no rodapé */
+        color: rgba(255, 255, 255, 0.8);
     }
   </style>
 </head>
