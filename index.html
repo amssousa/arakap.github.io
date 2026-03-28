@@ -15,7 +15,6 @@
 
   <style>
     body {
-      /* Nova fonte aplicada aqui */
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(135deg,#2b3292,#0149b4);
       color: white;
@@ -28,7 +27,7 @@
     }
 
     .container {
-      flex: 1; /* Faz o conteúdo principal ocupar o espaço e empurrar o rodapé para baixo */
+      flex: 1;
     }
 
     .botao {
@@ -39,33 +38,25 @@
       background: white;
       color: black;
       text-decoration: none;
-      margin: 12px auto; /* Aumentei um pouquinho o espaçamento entre eles */
-      padding: 15px;
-      padding-left: 25px;
-      
-      /* MUDANÇA: Cantos muito mais arredondados */
+      margin: 12px auto;
+      padding: 12px;
+      padding-left: 20px;
       border-radius: 30px; 
-      
-      width: 85%; /* Ajuste leve na largura */
-      max-width: 320px;
-      
-      /* MUDANÇA: Fonte mais fina (peso 400) */
+      width: 75%;
+      max-width: 260px; /* Comprimento reduzido aqui */
       font-weight: 400; 
-      
-      font-size: 15px; /* Ajuste leve no tamanho */
-      letter-spacing: 0.5px; /* Espaçamento entre letras para elegância */
-      
+      font-size: 14px;
+      letter-spacing: 0.5px;
       transition: 0.3s ease;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra leve para dar profundidade */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
 
     .botao i {
       font-size: 18px;
-      width: 25px; /* Alinha os ícones verticalmente */
+      width: 25px;
       text-align: center;
     }
 
-    /* Cores dos ícones mantidas */
     .fa-whatsapp { color: #25D366; }
     .fa-instagram { color: #E4405F; }
     .fa-facebook { color: #1877F2; }
@@ -88,11 +79,10 @@
 
     .botao:hover {
       background: #f8f8f8;
-      transform: translateY(-3px); /* Efeito de flutuar levemente */
+      transform: translateY(-3px);
       box-shadow: 0 6px 12px rgba(0,0,0,0.15);
     }
 
-    /* Estilo do Rodapé mantendo a fonte Poppins */
     footer {
       margin-top: 40px;
       padding: 20px;
@@ -103,7 +93,7 @@
     }
     
     footer strong {
-        font-weight: 600; /* Nome da empresa um pouco mais forte no rodapé */
+        font-weight: 600;
         color: rgba(255, 255, 255, 0.8);
     }
   </style>
@@ -139,7 +129,7 @@
 
   <footer>
     <strong>Arakap Personalizados</strong><br>
-    Rua Bela Vista, 1019 - Bairro Brasília - Arapiraca/AL<br>
+    Rua Bela Vista, 1019 - Bairro: Brasília - Arapiraca/AL<br>
     © 2026 Todos os direitos reservados.
   </footer>
 
