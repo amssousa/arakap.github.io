@@ -5,6 +5,8 @@
   <title>Arakap Personalizados</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="icon" type="image/png" href="logo.png">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
@@ -14,24 +16,27 @@
       color: white;
       text-align: center;
       padding: 30px;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
-    h1 {
-      margin-bottom: 10px;
-    }
-
-    p {
-      margin-bottom: 30px;
-      color: #ccc;
+    .container {
+      flex: 1; /* Faz o conteúdo principal ocupar o espaço e empurrar o rodapé para baixo */
     }
 
     .botao {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
       background: white;
       color: black;
       text-decoration: none;
       margin: 10px auto;
       padding: 15px;
+      padding-left: 20px;
       border-radius: 10px;
       width: 80%;
       max-width: 300px;
@@ -39,83 +44,80 @@
       transition: 0.3s;
     }
 
-    /* Espaço do ícone */
-.botao i {
-  margin-right: 10px;
-}
-
-/* Cores oficiais */
-.fa-whatsapp {
-  color: #25D366;
-}
-
-.fa-instagram {
-  color: #E4405F;
-}
-
-.fa-facebook {
-  color: #1877F2;
-}
-
-/* Extras */
-.fa-store {
-  color: #FF8C00; /* laranja (catálogo) */
-}
-
-.fa-map-marker-alt {
-  color: #EA4335; /* vermelho estilo Google Maps */
-}
-
-    .logo-container {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.logo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;      /* 👈 deixa redonda */
-  object-fit: cover;       /* 👈 evita deformar */
-  border: 3px solid white; /* 👈 borda bonita */
-}
-  
-
-    .botao {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* muda aqui */
-  gap: 10px;
-  padding-left: 20px;
+    .botao i {
+      font-size: 18px;
+      width: 25px; /* Alinha os ícones verticalmente */
     }
 
-    .botao i {
-      margin-right: 10px;
-      font-size: 18px;
+    .fa-whatsapp { color: #25D366; }
+    .fa-instagram { color: #E4405F; }
+    .fa-facebook { color: #1877F2; }
+    .fa-store { color: #FF8C00; }
+    .fa-map-marker-alt { color: #EA4335; }
+
+    .logo-container {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
     }
 
     .botao:hover {
-      background: #25D366;
-      color: white;
+      background: #f0f0f0;
+      transform: scale(1.02);
+    }
+
+    /* Estilo do Rodapé */
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.6;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="logo-container">
-  <img src="logo.png" alt="Arakap" class="logo">
+  <div class="container">
+    <div class="logo-container">
+      <img src="logo.png" alt="Arakap" class="logo">
+    </div>
+
+    <a class="botao" href="https://api.whatsapp.com/send/?phone=558299260730&text&type=phone_number&app_absent=0&wame_ctl=1" target="_blank">
+      <i class="fab fa-whatsapp"></i> Fale no WhatsApp
+    </a>
+    
+    <a class="botao" href="https://facebook.com/arakappersonalizados" target="_blank">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
+    
+    <a class="botao" href="https://instagram.com/arakappersonalizados" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    
+    <a class="botao" href="https://wa.me/c/558299260730" target="_blank">
+      <i class="fas fa-store"></i> Catálogo
+    </a>
+    
+    <a class="botao" href="https://maps.app.goo.gl/EN44UnHEKoyBe6wY6" target="_blank">
+      <i class="fas fa-map-marker-alt"></i> Localização
+    </a>
   </div>
 
-  <a class="botao" href="https://api.whatsapp.com/send/?phone=558299260730&text&type=phone_number&app_absent=0&wame_ctl=1" target="_blank">
-  <i class="fab fa-whatsapp"></i> Fale no WhatsApp</a>
-  <a class="botao" href="https://facebook.com/arakappersonalizados" target="_blank">
-  <i class="fab fa-facebook"></i> Facebook</a>
-  <a class="botao" href="https://instagram.com/arakappersonalizados" target="_blank">
-  <i class="fab fa-instagram"></i> Instagram</a>
-  <a class="botao" href="https://wa.me/c/558299260730" target="_blank">
-  <i class="fas fa-store"></i> Catálogo</a>
-  <a class="botao" href="https://maps.app.goo.gl/EN44UnHEKoyBe6wY6" target="_blank">
-  <i class="fas fa-map-marker-alt"></i> Localização</a>
+  <footer>
+    <strong>Arakap Personalizados</strong><br>
+    CNPJ: 00.000.000/0000-00<br>
+    Rua Bela Vista, 1019 - Bairro Brasília - Arapiraca/AL<br>
+    © 2026 Todos os direitos reservados.
+  </footer>
 
 </body>
 </html>
